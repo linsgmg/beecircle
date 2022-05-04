@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="155dp"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginTop="15dp"
+    android:background="@drawable/shenhezhuangtaibg"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="审核状态"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="待审核" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="5dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="充值账号"
+            android:textColor="#ff4d2400"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="充值金额"
+            android:textColor="#ff4d2400"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_type_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="充值类型"
+            android:textColor="#ff4d2400"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="#ff4d2400"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="155 8888 6666" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="#ff4d2400"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="100" />
+
+        <TextView
+            android:id="@+id/tv_type_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="#ff4d2400"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="腾讯" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dp_10"
+        android:layout_marginVertical="15dp"
+        android:textColor="#ff4d2400"
+        android:textSize="12sp"
+        tools:text="充值时间：2020-03-01 11:00:00" />
+
+</LinearLayout>
+

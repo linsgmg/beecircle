@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:paddingHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/miyuanjishi"
+            app:qmui_corner_radius="4dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="新手蜜源"
+                    android:textColor="@color/text"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_last_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="29天24:59:59"
+                    android:textColor="#ffffa041"
+                    android:textSize="12sp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已过期"
+                    android:textColor="#ff7d7d7d"
+                    android:textSize="12sp"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginVertical="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_total_output"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="总产：5.1"
+                    android:textColor="#4D2400"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_day_output"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="日产：0.17"
+                    android:textColor="#4D2400"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_cycle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="周期：30天"
+                    android:textColor="#4D2400"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_already_output"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="已生产：0"
+                    android:textColor="#4D2400"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_activity2"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="活跃度：0"
+                    android:drawableLeft="@drawable/huoyudu"
+                    android:drawablePadding="5dp"
+                    android:textColor="#4D2400"
+                    android:visibility="gone"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_limit2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text="限量：1个"
+                    android:visibility="gone"
+                    android:textColor="#4D2400"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginVertical="@dimen/dp_10"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_limit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="限量：1个"
+                    android:textColor="#4D2400"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_send"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="赠送"
+                    android:visibility="gone"
+                    android:textColor="#FFA041"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_activity"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:layout_height="wrap_content"
+                    android:text="活跃度：0"
+                    android:drawableLeft="@drawable/huoyudu"
+                    android:drawablePadding="5dp"
+                    android:textColor="#4D2400"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_buy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="购买"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    android:background="@drawable/bg_yellow_40"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="#ff4d2400"
+                    android:textSize="14sp"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_buy_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="购买时间：2020-11-11 11:00:00"
+                android:textColor="#4D2400"
+                android:visibility="gone"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"
+        android:layout_marginTop="@dimen/dp_10"/>
+</LinearLayout>
+

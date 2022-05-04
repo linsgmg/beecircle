@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/dp_10">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓名："
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_input_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@null"
+                android:gravity="bottom"
+                android:hint="请输入您的姓名"
+                android:maxLines="1"
+                android:textColor="#FF101010"
+                android:textColorHint="#9B9B9B"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="身份证号码："
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_input_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@null"
+                android:gravity="bottom"
+                android:hint="请输入您的身份证号码"
+                android:inputType="textVisiblePassword"
+                android:maxLines="1"
+                android:textColor="#FF101010"
+                android:textColorHint="#9B9B9B"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="上传身份证照片"
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:id="@+id/ll_pic"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/scshenfenzheng"
+                    android:orientation="vertical">
+
+                    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                        android:id="@+id/iv_pic"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_height="125dp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_pic_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="80dp"
+                        android:text="上传身份证正面照片"
+                        android:textColor="#ff10121c"
+                        android:textSize="12sp" />
+
+                    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                        android:id="@+id/iv_close1"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_alignParentEnd="true"
+                        android:visibility="gone"
+                        android:src="@drawable/diercishenheshibai"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dp_10"
+                        android:text="示例："
+                        android:textColor="#ff10121c"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                        android:id="@+id/iv_example"
+                        android:layout_width="125dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/banbengengxin" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="上传视频"
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/ll_video"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shangchuanshipin"
+                android:orientation="vertical">
+
+
+                <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                    android:id="@+id/iv_video1"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp" />
+
+                <TextView
+                    android:id="@+id/tv_video_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="@dimen/dp_10"
+                    android:text="上传视频\n（上传手持身份证+纸条视频）"
+                    android:textColor="#ff10121c"
+                    android:textSize="12sp" />
+
+                <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                    android:id="@+id/iv_start"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:src="@drawable/bofangsp"/>
+
+                <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                    android:id="@+id/iv_close2"
+                    android:layout_width="@dimen/dp30"
+                    android:layout_height="@dimen/dp30"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="gone"
+                    android:src="@drawable/diercishenheshibai"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="示例视频："
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+                <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+                    android:id="@+id/iv_video2"
+                    android:layout_width="168dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/banbengengxin" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/bofangsp"/>
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="温馨提示："
+                android:textColor="#ff000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_yellow_40"
+                android:gravity="center"
+                android:text="提交认证"
+                android:textColor="@color/text"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

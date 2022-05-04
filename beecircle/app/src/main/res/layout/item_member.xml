@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/shiminghuiyuanbg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingHorizontal="15dp">
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/touxiang_wode"
+            app:qmui_is_circle="true" />
+
+        <TextView
+            android:id="@+id/tv_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:text="UID:6548321"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_uid"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:text="166****5413"
+            android:textColor="#ff4d2400"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="2020-03-23"
+            android:textColor="#ff4d2400"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="团队活跃度"
+                android:textColor="#ff4d2400"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_team_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="0"
+                android:textColor="#ff4d2400"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="个人活跃度"
+                android:textColor="#ff4d2400"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_person_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="0"
+                android:textColor="#ff4d2400"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="团队人数"
+                android:textColor="#ff4d2400"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_team_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="0"
+                android:textColor="#ff4d2400"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

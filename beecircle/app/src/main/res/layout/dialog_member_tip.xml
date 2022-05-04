@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/iv_icon"
+    android:layout_gravity="center_vertical"
+    android:layout_marginHorizontal="20dp"
+    android:background="@drawable/bg_white_10"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="30dp">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="5dp"
+        android:src="@drawable/del" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tixing"
+            android:drawablePadding="5dp"
+            android:text="提示"
+            android:textColor="#FF101010"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xx BLC"
+            android:textColor="#EE0E0E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启排单？"
+            android:textColor="#FF101010"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_star_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center">
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/iv_star1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yixing" />
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/iv_star2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/yixing" />
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/iv_star3"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/yixing" />
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/iv_star4"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/yixing" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tip2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:text="恭喜您成功升级二星！"
+        android:textColor="#ff4d2400"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="您现在离升级二星团队还差"
+        android:textColor="#ff4d2400"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_star_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="直推一星："
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_star_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0个"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_person_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="三代内人数："
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_person_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0人"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_activity_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="团队活跃度："
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_activity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_activity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/tv_activity2_key"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="活跃度≥1："
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_activity2_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0人"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+

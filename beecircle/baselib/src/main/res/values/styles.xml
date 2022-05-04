@@ -1,0 +1,97 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--页面背景色-->
+        <item name="android:windowBackground">@color/windowBackg</item>
+    </style>
+
+    <!--    默认白色-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+<!--        <item name="android:windowTranslucentStatus">false</item> //允许页面可以拉伸到顶部状态栏并且定义顶部状态栏透明，安卓4.4才有-->
+<!--        <item name="android:windowTranslucentNavigation">true</item> //设置虚拟键透明-->
+<!--        <item name="android:statusBarColor">@android:color/transparent</item> //设置状态栏的颜色为透明-->
+    </style>
+
+    <declare-styleable name="DancingView">
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineHeight" format="dimension" />
+        <attr name="pointColor" format="reference|color" />
+        <attr name="lineColor" format="reference|color" />
+        <attr name="ballColor" format="reference|color" />
+    </declare-styleable>
+
+
+    <!--没有选中的样式-->
+    <!--选中的样式-->
+
+    <style name="CustomDialog" parent="android:style/Theme.Dialog">
+        <!--背景颜色及和透明程度-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否去除边框-->
+        <item name="android:windowFrame">@null</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="TipDialog" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="tip_dialog_wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="android:minHeight">56dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <!--        <item name="android:background">@drawable/tip_dialog_bg</item>-->
+    </style>
+
+
+    <!--DoctorListActivity以Dialog展示 start-->
+    <!--DoctorListActivity以Dialog展示 end-->
+
+
+    <style name="main_radio_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:textColor">@color/main_tab_text</item>
+    </style>
+
+<!--    <style name="AppTheme.Launcher">-->
+<!--        <item name="android:windowIsTranslucent">true</item>  &lt;!&ndash; 透明背景 &ndash;&gt;-->
+<!--        <item name="android:windowNoTitle">true</item>-->
+<!--        <item name="android:windowContentOverlay">@null</item>-->
+<!--        <item name="windowNoTitle">true</item>-->
+<!--        &lt;!&ndash;        <item name="android:windowBackground">@drawable/bg</item>&ndash;&gt;-->
+<!--        <item name="android:windowFullscreen">true</item>-->
+<!--    </style>-->
+
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginHorizontal="35dp"
+    android:background="@drawable/bg_white_10"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical">
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/iv_icon"
+            app:qmui_corner_radius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="172dp" />
+
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="发现新版本"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ff202020"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp">
+
+        <TextView
+            android:id="@+id/tv_subContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:text="首次提现请完整观看一次视频"
+            android:textColor="#10121C"
+            android:textSize="14sp" />
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E7E7E7" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/btn_bg_blue_5"
+            android:gravity="start"
+            android:hint="请输入驳回原因，不超过50字"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="15dp"
+            android:textColor="#202020"
+            android:textColorHint="#ff808080"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/btn_bg_blue_5"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_pay_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入退还金额"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="15dp"
+                android:textColor="#202020"
+                android:textColorHint="#ff808080"
+                android:textSize="@dimen/sp_14" />
+
+
+            <TextView
+                android:id="@+id/tv_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:text="全部"
+                android:textColor="#ffe7002e"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginVertical="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tv_negative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/red_border_20"
+            android:gravity="center"
+            android:paddingVertical="6.5dp"
+            android:text="取消"
+            android:textColor="#FFBA1A"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_positive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_40"
+            android:layout_weight="1"
+            android:background="@drawable/red_bg_20"
+            android:gravity="center"
+            android:paddingVertical="6.5dp"
+            android:text="立即更新"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

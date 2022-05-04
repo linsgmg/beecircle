@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activity.mine.VerifyStatusActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="80dp"
+        android:visibility="gone"
+        tools:context=".activity.mine.VerifyStatusActivity">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/wodetuandui" />
+
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@drawable/bg_yellow_40"
+            android:gravity="center"
+            android:text="创建团队"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="15dp">
+
+            <com.google.android.material.appbar.CollapsingToolbarLayout
+                android:id="@+id/toolbarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:collapsedTitleGravity="center"
+                app:expandedTitleGravity="start"
+                app:expandedTitleMarginBottom="70dp"
+                app:expandedTitleMarginStart="15dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:toolbarId="@id/toolbar">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    app:layout_collapseMode="pin">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/wodetuanduibg">
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"
+                            android:text="一星团队"
+                            android:textColor="#ff4d2400"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_update"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/dp_10"
+                            android:background="@drawable/bg_yellow_left_15"
+                            android:paddingHorizontal="@dimen/dp_10"
+                            android:paddingVertical="3dp"
+                            android:text="团队升级"
+                            android:textColor="#ffab6100"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/tv_team_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="70dp"
+                            android:text="团队人数：200"
+                            android:textColor="#ff4d2400"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv_team_activity"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="70dp"
+                            android:layout_marginRight="50dp"
+                            android:text="团队活跃度：35"
+                            android:textColor="#ff4d2400"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="15dp"
+                        android:drawableLeft="@drawable/wideyaoqingren"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:gravity="center_vertical"
+                        android:text="我的邀请人"
+                        android:textColor="#ff4d2400"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+
+
+                        <ImageView
+                            android:id="@+id/iv_my_invite"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/wodeyaoqingrentx"/>
+
+                        <TextView
+                            android:id="@+id/tv_invite_uid"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="UID:1234567"
+                            android:textColor="#ff4d2400"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_invite_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_10"
+                            android:text="166****7777"
+                            android:textColor="#ff4d2400"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/wodetuandui"
+                            android:drawablePadding="@dimen/dp_10"
+                            android:gravity="center_vertical"
+                            android:text="我的团队"
+                            android:textColor="#ff4d2400"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv_update_way"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="升级攻略"
+                            android:textColor="#ff4d2400"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="15dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/wodezhitui"
+                        android:drawablePadding="@dimen/dp_10"
+                        android:gravity="center_vertical"
+                        android:text="我的直推"
+                        android:textColor="#ff4d2400"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_up_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="活跃度"
+                        android:textColor="#ff4d2400"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv_up_down2"
+                        android:layout_width="20dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/selector_up_down" />
+                </LinearLayout>
+
+                <com.qmuiteam.qmui.widget.QMUITabSegment
+                    android:id="@+id/tabSegment"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="14sp"
+                    app:qmui_tab_indicator_height="2dp" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="15dp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</LinearLayout>

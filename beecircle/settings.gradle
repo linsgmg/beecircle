@@ -1,0 +1,4 @@
+include ':app'
+include ':baselib'
+include ':weiXinRecorded'
+rootProject.name = "beecircle"

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="15dp"
+    android:paddingBottom="15dp"
+    tools:context=".activity.mine.ChangeNicknameActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textStyle="bold"
+            android:textColor="#ff2a2a2a"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_height="@dimen/dp_40"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="bottom|end"
+            android:hint="用户昵称"
+            android:maxLines="1"
+            android:textColor="#FF101010"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:textColorHint="#9B9B9B"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/ll_input"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+
+    <TextView
+        android:id="@+id/tv_change"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@drawable/bg_yellow_40"
+        android:layout_alignParentBottom="true"
+        android:layout_height="45dp"
+        android:textStyle="bold"
+        android:text="修改"
+        android:textColor="#ff4d2400"
+        android:textSize="14sp"
+        />
+</RelativeLayout>

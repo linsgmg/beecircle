@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rl_code"
+        android:layout_width="260dp"
+        android:background="@drawable/bg_white_10"
+        app:cardCornerRadius="10dp"
+        android:layout_height="260dp">
+        
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/iv_code"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:scaleType="center"
+            app:qmui_corner_radius="@dimen/dp_4"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+    
+    <View
+        android:layout_width="2dp"
+        android:layout_height="30dp"
+        android:background="@color/white"/>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tk_gb"/>
+
+</LinearLayout>

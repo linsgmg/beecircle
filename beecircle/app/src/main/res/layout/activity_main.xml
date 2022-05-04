@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+<!--    <com.next.easynavigation.view.EasyNavigationBar-->
+<!--        android:id="@+id/easy_bars"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent" />-->
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_home"
+            android:drawableTop="@drawable/main_tab_home"
+            android:text="首页"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:paddingVertical="5dp"
+            style="@style/main_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/main_ecosphere"
+            android:drawableTop="@drawable/main_tab_ecosphere"
+            android:text="生态圈"
+            android:layout_height="match_parent"
+            android:paddingVertical="5dp"
+            style="@style/main_radio_button"/>
+
+
+<!--            android:drawableTop="@drawable/main_tab_business"-->
+        <RadioButton
+            android:id="@+id/main_change_center"
+            android:text="置换中心"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/main_tab_miner"
+            android:paddingVertical="5dp"
+            style="@style/main_radio_button"/>
+
+        <RadioButton
+            android:id="@+id/main_mine"
+            android:drawableTop="@drawable/main_tab_mine"
+            android:text="我的"
+            android:paddingVertical="5dp"
+            android:layout_height="match_parent"
+            style="@style/main_radio_button"/>
+
+    </RadioGroup>
+
+
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/view_pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_weight="1"-->
+<!--        android:layout_height="0dp" />-->
+
+<!--    <com.qmuiteam.qmui.widget.QMUITabSegment-->
+<!--        android:id="@+id/tabSegment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:textSize="10sp" />-->
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/iv_icon"
+    android:layout_gravity="center_vertical"
+    android:layout_marginHorizontal="20dp"
+    android:background="@drawable/bg_white_10"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="30dp">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="5dp"
+        android:src="@drawable/del" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="算力兑换"
+            android:textColor="#FF101010"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_title_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xx BLC"
+            android:textColor="#EE0E0E"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启排单？"
+            android:textColor="#FF101010"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兑换算力"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:background="@null"
+            android:gravity="right"
+            android:hint="请输入需要兑换算力数量"
+            android:textColor="@color/text"
+            android:textColorHint="#ff9b9b9b"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="K"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="所需蜂蜜"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_need_bee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="蜂蜜余额"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_bee_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="提示：可用蜂蜜余额须保留5个"
+        android:textColor="#ff338bff"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_yellow_40"
+        android:gravity="center"
+        android:text="确认兑换"
+        android:textColor="#ff4d2400"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+
+
+

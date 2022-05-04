@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ecosphere.MyExamActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/bg_yellow_15"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的资产"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_my_asset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="0.0 BTF"
+            android:textColor="#ff4d2400"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_yellow_40"
+                android:drawableLeft="@drawable/chongbo"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="8dp"
+                android:text="充币"
+                android:textColor="#ff4d2400"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_drawback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_yellow_40"
+                android:drawableLeft="@drawable/tibi"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="8dp"
+                android:text="提币"
+                android:textColor="#ff4d2400"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_10"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_yellow_40"
+                android:drawableLeft="@drawable/zhuanzhang"
+                android:drawablePadding="@dimen/dp_10"
+                android:gravity="center"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="8dp"
+                android:text="转账"
+                android:textColor="#ff4d2400"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.qmuiteam.qmui.widget.QMUITabSegment
+        android:id="@+id/tabSegment"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="14sp"
+        app:qmui_tab_indicator_height="2dp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

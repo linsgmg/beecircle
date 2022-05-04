@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ecosphere.BeeMine1Activity">
+
+    <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:src="@drawable/mifengkuangchang"/>
+
+    <RelativeLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/transparent"
+        android:fitsSystemWindows="true"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="46dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:onClick="back"
+            android:paddingHorizontal="@dimen/dp_10"
+            android:paddingTop="6dp"
+            android:paddingBottom="@dimen/dp_10"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingTop="6.5dp"
+            android:text="蜜蜂矿场"
+            android:textColor="@color/text"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:textStyle="bold"
+            android:text="蜜蜂矿场，火热报名中……"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="15dp"
+            android:layout_height="45dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:background="@drawable/bg_yellow_40"
+            android:text="立即报名"
+            android:textColor="#ff4d2400"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+</FrameLayout>

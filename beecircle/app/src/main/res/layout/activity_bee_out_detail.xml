@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/dp_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转出账号："
+            android:textColor="#2A2A2A"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_input_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:digits="1234567890"
+            android:gravity="center_vertical"
+            android:hint="请输入转出账号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:textColor="#2A2A2A"
+            android:textColorHint="#9B9B9B"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/tv_charge_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="转出金额："
+            android:textColor="#2A2A2A"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_input_money"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入转出金额"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:textColor="#2A2A2A"
+                android:textColorHint="#9B9B9B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蜂蜜"
+                android:textColor="#ffffa041"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蜂蜜余额：200"
+            android:textColor="#ffffa041"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="交易密码："
+            android:textColor="#2A2A2A"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/et_input_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入交易密码"
+            android:inputType="numberPassword"
+            android:maxLength="6"
+            android:maxLines="1"
+            android:textColor="#2A2A2A"
+            android:textColorHint="#9B9B9B"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/tv_verify_code_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:textColor="#ff000000"
+            android:textSize="14sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_verify_code"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_input_verify_code"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:digits="1234567890"
+                android:gravity="bottom"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="#FF101010"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:textColorHint="#9B9B9B"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_get_verify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取验证码"
+                android:paddingHorizontal="@dimen/dp_10"
+                android:paddingVertical="6dp"
+                android:gravity="center"
+                android:textColor="#ff4d2400"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/bg_yellow_40"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v_verify_code_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="注：只可转给直推下级，10个起转，手续费50%"
+            android:textColor="#ff338bff"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/bg_yellow_40"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="@color/text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

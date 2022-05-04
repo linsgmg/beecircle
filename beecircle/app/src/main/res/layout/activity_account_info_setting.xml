@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    android:paddingTop="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="头像"
+            android:textStyle="bold"
+            android:textColor="#ff2a2a2a"
+            android:textSize="14sp" />
+
+        <com.qmuiteam.qmui.widget.QMUIRadiusImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/dp_40"
+            android:layout_height="@dimen/dp_40"
+            app:qmui_is_circle="true"
+            android:src="@drawable/wodeyaoqingrentx" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/dakai" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="昵称"
+            android:textStyle="bold"
+            android:textColor="#ff2a2a2a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户昵称"
+            android:textStyle="bold"
+            android:textColor="#ff2a2a2a"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="12dp"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:src="@drawable/dakai" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_btf_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="版本号"
+            android:textStyle="bold"
+            android:textColor="#ff2a2a2a"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="v1.0.0"
+            android:textStyle="bold"
+            android:textColor="#ff2a2a2a"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line"/>
+
+</LinearLayout>
